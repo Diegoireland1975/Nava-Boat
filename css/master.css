@@ -209,7 +209,7 @@ header p {
   padding-top: 50px;
   height: auto;
 }
-#gallery h3 {
+#gallery > h3 {
   text-transform: uppercase;
   margin-bottom: 10px;
   font-size: 2rem;
@@ -274,20 +274,32 @@ header p {
   width: 24px;
   margin-right: 0.3rem;
 }
-.box1 h4,
-.box2 h4,
-.box3 h4,
-.box4 h4,
-.box5 h4 {
-  position: relative;
-  bottom: 80px;
+.gallery .box h3 {
+  position: absolute;
+  bottom: 30px;
   left: 20px;
   color: white;
   text-align: left;
-  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 0.875rem;
+}
+
+.gallery .box h4 {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  color: white;
+  text-align: left;
   font-weight: 400;
 }
 
+.gallery .box h3 {
+  font-size: 30px;
+  white-space: nowrap;
+}
+.gallery .box h4 {
+  font-size: 20px;
+}
 /* Ownboat */
 #ownboat {
   background: url(../img/own-boat2.jpg) no-repeat center center/cover;
@@ -328,6 +340,20 @@ header p {
   margin: 0 auto;
 }
 
+.boats .hidden {
+  overflow: hidden;
+}
+
+.boats .hidden img {
+  transition: 0.4s ease;
+  transform-origin: center left;
+  filter: brightness(50%);
+}
+.boats .hidden img:hover {
+  transform: scale(1.1);
+  filter: brightness(60%);
+  cursor: pointer;
+}
 .boats .boat {
   position: relative;
 }
@@ -358,6 +384,12 @@ header p {
   color: #fff;
   font-family: inherit;
   font-weight: 100;
+}
+
+.boats-name h4 {
+  margin-bottom: 21px;
+  font-size: 1.875rem;
+  font-weight: 400;
 }
 .boats-info {
   display: flex;
