@@ -27,7 +27,7 @@
     <form action="process.php">
       <div id="find-boat">
         <input type="text" name="name" id="name" placeholder="what is your destinations sailor?">
-        <button type="submit">find a boat</button>
+        <button class="btn btn-primary btn-icon" type="submit">find a boat</button>
       </div>
     </form>
   </header>
@@ -64,50 +64,128 @@
             <img src="img/sailboat.svg" alt="sailboat icon" class="icon-boat">
           </div>
         </div>
-        <div class="box2 box"><img src="img/ibiza.jpg" alt="ibiza island">
-          <h4>Ibiza<br>Spain</h4>
+        <div class="box2 box">
+          <img src="img/ibiza.jpg" alt="ibiza island">
+          <h3>Ibiza</h3>
+          <h4>Spain</h4>
+          <div class="icon">
+            <span class="number">621</span>
+            <img src="img/sailboat.svg" alt="sailboat icon" class="icon-boat">
+          </div>
         </div>
         <div class="box3 box">
           <img src="img/palma-de-mallorca.jpg" alt="palma de mallorca">
-          <h4>Palma de Mallorca<br>Spain</h4>
+          <h3>Palma de Mallorca</h3>
+          <h4>Spain</h4>
+          <div class="icon">
+            <span class="number">543</span>
+            <img src="img/sailboat.svg" alt="sailboat icon" class="icon-boat">
+          </div>
         </div>
         <div class="box4 box">
           <img src="img/portofino.jpg" alt="portofino italy">
-          <h4>Portofino<br>Italy</h4>
+          <h3>Portofino</h3>
+          <h4>Italy</h4>
+          <div class="icon">
+            <span class="number">495</span>
+            <img src="img/sailboat.svg" alt="sailboat icon" class="icon-boat">
+          </div>
         </div>
-        <div class="box5">
+        <div class="box5 box">
           <img src="img/port-hercules.jpg" alt="port-hercules">
-          <h4>Port Hercules<br>Monaco</h4>
+          <h3>Port Hercules</h3>
+          <h4>Monaco</h4>
+          <div class="icon">
+            <span class="number">402</span>
+            <img src="img/sailboat.svg" alt="sailboat icon" class="icon-boat">
+          </div>
         </div>
       </div>
     </div>
-    <button>Explore more destinations</button>
+    <div class="center">
+      <button class="btn btn-secondary">Explore more destinations</button>
+    </div>
   </section>
-
+  <!-- Ownboat -->
   <section id="ownboat">
     <h2>have your own boat?</h2>
     <p>navigare necesse est vivere non est necesse</p>
-    <button>make money with your boat</button>
+    <button class="btn btn-primary" type="submit">make money with your boat</button>
   </section>
-
+  <!-- Featured boats -->
   <section id="featured-boats">
     <div class="featured-boats">
       <h3>Featured Boats</h3>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, error?</p>
     </div>
+
     <div class="boats">
-      <div class="boat1"><img src="img/delphia47.jpg" alt="boat delphia 47"></div>
-      <div class="boat1"><img src="img/sense55.jpg" alt="boat sense 55"></div>
-      <div class="boat1"><img src="img/cruiser51.jpg" alt="boat cruiser 51"></div>
-      <div class="boat1"><img src="img/cruiser41.jpg" alt="boat cruiser 41s"></div>
+      <!-- boat 1 -->
+      <div class="boat boat1">
+        <img src="img/delphia47.jpg" alt="boat delphia 47">
+        <div class="icon">
+          <span class="number">580/ day</span>
+        </div>
+        <div class="boats-name">
+          <h4>Delphia 47</h4>
+          <div class="boats-info">
+            <img src="img/map.svg" alt="location icon">Gdansk Poland
+            <img src="img/people.svg" alt="people icon">8 Berths
+          </div>
+        </div>
+      </div>
+      <!-- boat 2 -->
+      <div class="boat boat2">
+        <img src="img/sense55.jpg" alt="boat sense 55">
+        <div class="icon">
+          <span class="number">950/ day</span>
+        </div>
+
+        <div class="boats-name">
+          <h4>Sense 55</h4>
+          <div class="boats-info">
+            <img src="img/map.svg" alt="location icon">Portofino Italy
+            <img src="img/people.svg" alt="people icon"> 12 Berths
+          </div>
+        </div>
+      </div>
+      <!-- boat 3 -->
+      <div class="boat boat3">
+        <img src="img/cruiser51.jpg" alt="boat cruiser 51">
+        <div class="icon">
+          <span class="number">820/ day</span>
+        </div>
+        <div class="boats-name">
+          <h4>Crusier 51</h4>
+          <div class="boats-info">
+            <img src="img/map.svg" alt="location icon">Palma de Mallorca Spain
+
+          </div>
+        </div>
+      </div>
+      <!-- boat 4 -->
+      <div class="boat boat4">
+        <img src="img/cruiser41.jpg" alt="boat cruiser 41s">
+        <div class="icon">
+          <span class="number">400/ day</span>
+        </div>
+        <div class="boats-name">
+          <h4>Crusier 41S</h4>
+          <div class="boats-info">
+            <img src="img/map.svg" alt="location icon">Lisbon Portugal
+            <img src="img/people.svg" alt="people icon"> 8 Berths
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
+  <div class="center">
+    <button class="btn btn-secondary">Load More Boats</button>
+  </div>
 
+  <footer class="footer-main">
 
-
-
-
-
+  </footer>
 </body>
 </html>
