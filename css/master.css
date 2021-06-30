@@ -419,10 +419,11 @@ header p {
 .main-footer li:first-child {
   font-weight: bold;
   text-transform: uppercase;
+  margin-bottom: 1.5rem;
 }
 
 .main-footer li {
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 .main-footer .subscribe {
@@ -455,7 +456,7 @@ header p {
   margin-right: 0.5rem;
   background-color: #717171;
   border-radius: 50%;
-  padding: 0.3rem;
+  padding: 0.5rem;
 }
 @media (min-width: 768px) {
   .flex {
